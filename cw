@@ -21,6 +21,8 @@ _dl() {
 		_url=$(_to_raw_url "$@")
 	elif [[ $_mode == "fastgit" ]]; then
 		_url=$(_to_fastgit_url "$@")
+	elif [[ $_mode == "raws" ]]; then
+		_url=$(_to_raws_url "$@")
 	else
 		_url=$(_to_jsdelivr_url "$@")
 	fi
@@ -40,6 +42,10 @@ _to_jsdelivr_url() {
 	echo "https://cdn.jsdelivr.net/gh/$1/$2@$3/$4"
 }
 
+_to_raws_url() {
+	echo "https://raw.githubusercontents.com/$1/$2/$3/$4"
+}
+
 _clean() {
 	rm $fo
 }
@@ -53,6 +59,7 @@ Parameters:
   -h		Show help and category list.
   -f		Use fastgit CDN.
   -j		Use jsdelivr CDN.
+  -s		Use githubusercontents CDN.
 
 Categories:
   df		${_wl_df[4]} @${_wl_df[0]}/${_wl_df[1]}
@@ -86,6 +93,11 @@ _run() {
 		# Use fastgit CDN
 		if [[ $_args[0] =~ j ]]; then
 			_mode="jsdelivr"
+		fi
+
+		# Use githubusercontents CDN
+		if [[ $_args[0] =~ s ]]; then
+			_mode="raws"
 		fi
 
 		_args=(${_args[@]:1})
