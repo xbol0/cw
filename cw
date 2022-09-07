@@ -13,6 +13,9 @@ _wl_pw500=(TheKingOfDuck fuzzDicts master passwordDict/top500.txt "Weak password
 _wl_skw=(danielmiessler SecLists master Discovery/Variables/secret-keywords.txt "Secret keywords.")
 _wl_sev=(danielmiessler SecLists master Discovery/Variables/awesome-environment-variable-names.txt "Secret env variables.")
 _wl_sev=(danielmiessler SecLists master Discovery/Variables/awesome-environment-variable-names.txt "Secret env variables.")
+_wl_fmcomm=(adamtlangley ffufme main app/public/wordlist/common.txt "ffuf.me common list")
+_wl_fmparam=(adamtlangley ffufme main app/public/wordlist/parameters.txt "ffuf.me parameters list")
+_wl_fmsubdm=(adamtlangley ffufme main app/public/wordlist/subdomains.txt "ffuf.me subdomains list")
 
 _dl() {
 	local _url
@@ -62,10 +65,13 @@ Parameters:
   -s		Use githubusercontents CDN.
 
 Categories:
-  df		${_wl_df[4]} @${_wl_df[0]}/${_wl_df[1]}
-  pw500		${_wl_pw500[4]} @${_wl_pw500[0]}/${_wl_pw500[1]}
-  skw		${_wl_skw[4]} @${_wl_skw[0]}/${_wl_skw[1]}
-  sev		${_wl_sev[4]} @${_wl_sev[0]}/${_wl_sev[1]}
+  df			${_wl_df[4]} @${_wl_df[0]}/${_wl_df[1]}
+  pw500			${_wl_pw500[4]} @${_wl_pw500[0]}/${_wl_pw500[1]}
+  skw			${_wl_skw[4]} @${_wl_skw[0]}/${_wl_skw[1]}
+  sev			${_wl_sev[4]} @${_wl_sev[0]}/${_wl_sev[1]}
+  fmcomm		${_wl_fmcomm[4]} @${_wl_fmcomm[0]}/${_wl_fmcomm[1]}
+  fmparam		${_wl_fmparam[4]} @${_wl_fmparam[0]}/${_wl_fmparam[1]}
+  fmsubdm		${_wl_fmsubdm[4]} @${_wl_fmsubdm[0]}/${_wl_fmsubdm[1]}
 EOF
 }
 
