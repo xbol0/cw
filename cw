@@ -26,6 +26,8 @@ _wl_uname500=(TheKingOfDuck fuzzDicts master userNameDict/top500.txt "User name 
 _wl_cnln300=(TheKingOfDuck fuzzDicts master userNameDict/top300_lastname.txt "Chinese last name top 300.")
 _wl_sqli1=(TheKingOfDuck fuzzDicts master sqlDict/sql.txt "SQL inject.")
 _wl_fn10k=(TheKingOfDuck fuzzDicts master directoryDicts/fileName10000.txt "Filenames.")
+_wl_headers1=(devploit dontgo403 main payloads/headers "HTTP headers.")
+_wl_methods1=(devploit dontgo403 main payloads/httpmethods "HTTP request methods.")
 
 _dl() {
 	local _url
@@ -92,6 +94,8 @@ Categories:
   cnln300		${_wl_cnln300[4]} @${_wl_cnln300[0]}/${_wl_cnln300[1]}
   sqli1			${_wl_sqli1[4]} @${_wl_sqli1[0]}/${_wl_sqli1[1]}
   fn10k			${_wl_fn10k[4]} @${_wl_fn10k[0]}/${_wl_fn10k[1]}
+  headers1		${_wl_headers1[4]} @${_wl_headers1[0]}/${_wl_headers1[1]}
+  methods1		${_wl_methods1[4]} @${_wl_methods1[0]}/${_wl_methods1[1]}
 EOF
 }
 
