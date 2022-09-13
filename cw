@@ -28,6 +28,9 @@ _wl_sqli1=(TheKingOfDuck fuzzDicts master sqlDict/sql.txt "SQL inject.")
 _wl_fn10k=(TheKingOfDuck fuzzDicts master directoryDicts/fileName10000.txt "Filenames.")
 _wl_headers1=(devploit dontgo403 main payloads/headers "HTTP headers.")
 _wl_methods1=(devploit dontgo403 main payloads/httpmethods "HTTP request methods.")
+_wl_paramss=(s0md3v Arjun master arjun/db/small.txt "HTTP request parameters small.")
+_wl_paramsm=(s0md3v Arjun master arjun/db/medium.txt "HTTP request parameters medium.")
+_wl_paramsl=(s0md3v Arjun master arjun/db/large.txt "HTTP request parameters large.")
 
 _dl() {
 	local _url
@@ -96,6 +99,9 @@ Categories:
   fn10k			${_wl_fn10k[4]} @${_wl_fn10k[0]}/${_wl_fn10k[1]}
   headers1		${_wl_headers1[4]} @${_wl_headers1[0]}/${_wl_headers1[1]}
   methods1		${_wl_methods1[4]} @${_wl_methods1[0]}/${_wl_methods1[1]}
+  paramss		${_wl_paramss[4]} @${_wl_paramss[0]}/${_wl_paramss[1]}
+  paramsm		${_wl_paramsm[4]} @${_wl_paramsm[0]}/${_wl_paramsm[1]}
+  paramsl		${_wl_paramsl[4]} @${_wl_paramsl[0]}/${_wl_paramsl[1]}
 EOF
 }
 
