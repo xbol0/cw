@@ -31,6 +31,7 @@ _wl_methods1=(devploit dontgo403 main payloads/httpmethods "HTTP request methods
 _wl_paramss=(s0md3v Arjun master arjun/db/small.txt "HTTP request parameters small.")
 _wl_paramsm=(s0md3v Arjun master arjun/db/medium.txt "HTTP request parameters medium.")
 _wl_paramsl=(s0md3v Arjun master arjun/db/large.txt "HTTP request parameters large.")
+_wl_ofdb1=(weedcookie OWASP-FAVICON-database main HASHS.TXT "OWASP favicon database.")
 
 _dl() {
 	local _url
@@ -102,6 +103,7 @@ Categories:
   paramss		${_wl_paramss[4]} @${_wl_paramss[0]}/${_wl_paramss[1]}
   paramsm		${_wl_paramsm[4]} @${_wl_paramsm[0]}/${_wl_paramsm[1]}
   paramsl		${_wl_paramsl[4]} @${_wl_paramsl[0]}/${_wl_paramsl[1]}
+  ofdb1 	    	${_wl_ofdb1[4]} @${_wl_ofdb1[0]}/${_wl_ofdb1[1]}
 EOF
 }
 
