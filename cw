@@ -32,6 +32,7 @@ _wl_paramss=(s0md3v Arjun master arjun/db/small.txt "HTTP request parameters sma
 _wl_paramsm=(s0md3v Arjun master arjun/db/medium.txt "HTTP request parameters medium.")
 _wl_paramsl=(s0md3v Arjun master arjun/db/large.txt "HTTP request parameters large.")
 _wl_ofdb1=(weedcookie OWASP-FAVICON-database main HASHS.TXT "OWASP favicon database.")
+_wl_wmun=(3had0w Fuzzing-Dicts master Webmanage-Username.txt "Web manage username.")
 
 _dl() {
 	local _url
@@ -104,6 +105,7 @@ Categories:
   paramsm		${_wl_paramsm[4]} @${_wl_paramsm[0]}/${_wl_paramsm[1]}
   paramsl		${_wl_paramsl[4]} @${_wl_paramsl[0]}/${_wl_paramsl[1]}
   ofdb1 	    	${_wl_ofdb1[4]} @${_wl_ofdb1[0]}/${_wl_ofdb1[1]}
+  wmun1 	    	${_wl_wmun[4]} @${_wl_wmun[0]}/${_wl_wmun[1]}
 EOF
 }
 
