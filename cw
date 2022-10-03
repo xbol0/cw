@@ -34,6 +34,7 @@ _wl_paramsl=(s0md3v Arjun master arjun/db/large.txt "HTTP request parameters lar
 _wl_ofdb1=(weedcookie OWASP-FAVICON-database main HASHS.TXT "OWASP favicon database.")
 _wl_wmun=(3had0w Fuzzing-Dicts master Webmanage-Username.txt "Web manage username.")
 _wl_wpl1=(trickest wordlists main technologies/wordpress.txt "Wordpress list.")
+_wl_tcl1=(trickest wordlists main technologies/tomcat.txt "Tomcat list.")
 
 _dl() {
 	local _url
@@ -108,6 +109,7 @@ Categories:
   ofdb1 	    	${_wl_ofdb1[4]} @${_wl_ofdb1[0]}/${_wl_ofdb1[1]}
   wmun1 	    	${_wl_wmun[4]} @${_wl_wmun[0]}/${_wl_wmun[1]}
   wpl1 	 	   	${_wl_wpl1[4]} @${_wl_wpl1[0]}/${_wl_wpl1[1]}
+  tcl1 	 	   	${_wl_tcl1[4]} @${_wl_tcl1[0]}/${_wl_tcl1[1]}
 EOF
 }
 
