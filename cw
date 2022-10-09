@@ -35,6 +35,7 @@ _wl_ofdb1=(weedcookie OWASP-FAVICON-database main HASHS.TXT "OWASP favicon datab
 _wl_wmun=(3had0w Fuzzing-Dicts master Webmanage-Username.txt "Web manage username.")
 _wl_wpl1=(trickest wordlists main technologies/wordpress.txt "Wordpress list.")
 _wl_tcl1=(trickest wordlists main technologies/tomcat.txt "Tomcat list.")
+_wl_xss1=(RenwaX23 XSS-Payloads master Payloads.txt "Another XSS payload list.")
 
 _dl() {
 	local _url
@@ -110,6 +111,7 @@ Categories:
   wmun1 	    	${_wl_wmun[4]} @${_wl_wmun[0]}/${_wl_wmun[1]}
   wpl1 	 	   	${_wl_wpl1[4]} @${_wl_wpl1[0]}/${_wl_wpl1[1]}
   tcl1 	 	   	${_wl_tcl1[4]} @${_wl_tcl1[0]}/${_wl_tcl1[1]}
+  xss1 	 	   	${_wl_xss1[4]} @${_wl_xss1[0]}/${_wl_xss1[1]}
 EOF
 }
 
